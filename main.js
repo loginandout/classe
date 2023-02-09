@@ -8,7 +8,7 @@ window.addEventListener('load', () => {
 
 		const task = input.value;
 
-		const task_el = document.createElement('div');
+		const task_el = document.createElement('div')
 		task_el.classList.add('task');
 
 		const task_content_el = document.createElement('div');
@@ -22,6 +22,12 @@ window.addEventListener('load', () => {
 		task_input_el.value = task;
 		task_input_el.setAttribute('readonly', 'readonly');
 
+
+
+
+
+		
+
 		task_content_el.appendChild(task_input_el);
 
 		const task_actions_el = document.createElement('div');
@@ -33,7 +39,7 @@ window.addEventListener('load', () => {
 
 		const task_delete_el = document.createElement('button');
 		task_delete_el.classList.add('delete');
-		task_delete_el.innerText = '';
+		task_delete_el.innerText = 'delete';
 
 		task_actions_el.appendChild(task_edit_el);
 		task_actions_el.appendChild(task_delete_el);
